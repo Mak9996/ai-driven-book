@@ -1,0 +1,496 @@
+/* ============================================
+   OPTIMIZED BLACK & BLUE HOMEPAGE - GPU ACCELERATED
+   ============================================ */
+
+/* Hero Banner */
+.heroBanner {
+  padding: 6rem 2rem;
+  position: relative;
+  background: linear-gradient(135deg, #000000 0%, #16213E 50%, #003D99 100%);
+  color: white;
+  overflow: hidden;
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+}
+
+/* Simple static background - no animation for performance */
+.heroBanner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 50% 50%, rgba(0, 212, 255, 0.08) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 1;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+.heroLeft {
+  flex: 1;
+  min-width: 320px;
+}
+
+.heroRight {
+  flex: 1;
+  min-width: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroLabel {
+  display: inline-block;
+  background: rgba(0, 153, 255, 0.2);
+  color: #00D4FF;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  border: 1px solid rgba(0, 212, 255, 0.3);
+}
+
+.heroTitle {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin: 1rem 0;
+  line-height: 1.2;
+}
+
+.gradient {
+  background: linear-gradient(135deg, #0066FF 0%, #00D4FF 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.heroSubtitle {
+  font-size: 1.5rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 1rem 0;
+  font-weight: 500;
+}
+
+.heroDescription {
+  font-size: 1.125rem;
+  color: rgba(255, 255, 255, 0.7);
+  margin: 1.5rem 0;
+  line-height: 1.7;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.buttonPrimary,
+.buttonSecondary {
+  padding: 1rem 2rem;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  display: inline-block;
+  will-change: transform;
+}
+
+.buttonPrimary {
+  background: linear-gradient(135deg, #0066FF 0%, #00D4FF 100%);
+  color: white;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.6);
+}
+
+.buttonPrimary:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.7), 0 0 30px rgba(0, 212, 255, 0.5);
+  color: white;
+}
+
+.buttonSecondary {
+  background: transparent;
+  border: 2px solid #00D4FF;
+  color: #00D4FF;
+}
+
+.buttonSecondary:hover {
+  transform: translateY(-3px);
+  background: rgba(0, 212, 255, 0.1);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.4);
+  color: #00D4FF;
+}
+
+.features {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.featureTag {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: rgba(0, 153, 255, 0.15);
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  border: 1px solid rgba(0, 212, 255, 0.3);
+  font-size: 0.875rem;
+}
+
+.featureIcon {
+  font-size: 1.25rem;
+}
+
+.heroImage {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 0 30px rgba(0, 212, 255, 0.4));
+  will-change: transform;
+}
+
+/* Sections */
+.featuresSection,
+.statsSection,
+.techSection,
+.learningPath,
+.useCases,
+.faqSection,
+.ctaSection {
+  padding: 4rem 2rem;
+  position: relative;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Section Headers */
+.sectionTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1rem;
+  background: linear-gradient(135deg, #0066FF 0%, #00D4FF 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sectionSubtitle {
+  font-size: 1.25rem;
+  text-align: center;
+  color: rgba(255, 255, 255, 0.7);
+  margin-bottom: 3rem;
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.sectionHeaderContent {
+  flex: 1;
+  min-width: 300px;
+}
+
+.sectionImage {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.floatingImage {
+  max-width: 400px;
+  width: 100%;
+  filter: drop-shadow(0 0 20px rgba(0, 212, 255, 0.3));
+}
+
+/* Grids */
+.featuresGrid,
+.statsGrid,
+.techGrid,
+.pathGrid,
+.useCaseGrid,
+.faqGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+/* Cards */
+.featureCard,
+.statCard,
+.techCard,
+.pathCard,
+.useCaseCard,
+.faqCard {
+  background: rgba(26, 26, 46, 0.8);
+  border: 1px solid rgba(0, 153, 255, 0.2);
+  border-radius: 1rem;
+  padding: 2rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease, border-color 0.2s ease;
+  will-change: transform;
+}
+
+.featureCard:hover,
+.statCard:hover,
+.techCard:hover,
+.pathCard:hover,
+.useCaseCard:hover {
+  transform: translateY(-5px);
+  box-shadow: 0 12px 24px rgba(0, 0, 0, 0.7), 0 0 30px rgba(0, 212, 255, 0.4);
+  border-color: #00D4FF;
+}
+
+.featureCard h3,
+.useCaseCard h3,
+.faqQuestion {
+  color: #00D4FF;
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+}
+
+.featureCard p,
+.useCaseCard p,
+.faqAnswer {
+  color: rgba(255, 255, 255, 0.8);
+  line-height: 1.6;
+}
+
+/* Stats Section */
+.statsSection {
+  background: rgba(0, 153, 255, 0.05);
+  border-top: 1px solid rgba(0, 153, 255, 0.1);
+  border-bottom: 1px solid rgba(0, 153, 255, 0.1);
+}
+
+.statCard {
+  text-align: center;
+}
+
+.statIcon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+.statNumber {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #00D4FF;
+  margin: 0.5rem 0;
+}
+
+.statLabel {
+  font-size: 1rem;
+  color: rgba(255, 255, 255, 0.7);
+}
+
+/* Tech Stack */
+.techCard {
+  text-align: center;
+  padding: 1.5rem;
+}
+
+.techName {
+  font-weight: 600;
+  color: white;
+  margin-bottom: 0.5rem;
+}
+
+.techCategory {
+  font-size: 0.875rem;
+  color: #00D4FF;
+}
+
+/* Learning Path */
+.pathHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.pathRocketImage {
+  max-width: 200px;
+}
+
+.rocketImage {
+  width: 100%;
+  filter: drop-shadow(0 0 20px rgba(0, 212, 255, 0.3));
+}
+
+.pathStep {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #0066FF 0%, #00D4FF 100%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+}
+
+.pathIcon {
+  font-size: 2rem;
+  margin: 1rem 0;
+}
+
+.pathDuration {
+  margin-top: 1rem;
+  color: rgba(255, 255, 255, 0.6);
+  font-size: 0.875rem;
+}
+
+/* Use Cases */
+.tags {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.tag {
+  background: rgba(0, 153, 255, 0.2);
+  color: #00D4FF;
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.75rem;
+  border: 1px solid rgba(0, 212, 255, 0.3);
+}
+
+.useCaseIcon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+}
+
+/* CTA Section */
+.ctaSection {
+  background: linear-gradient(135deg, #003D99 0%, #0066FF 100%);
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+.ctaTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.ctaSubtitle {
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.9);
+  margin-bottom: 2rem;
+}
+
+.ctaButtons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+
+.buttonOutline {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.2s ease;
+  display: inline-block;
+}
+
+.buttonOutline:hover {
+  background: white;
+  color: #0066FF;
+  transform: translateY(-3px);
+}
+
+.ctaNote {
+  margin-top: 2rem;
+  color: rgba(255, 255, 255, 0.8);
+  font-size: 0.875rem;
+}
+
+/* Responsive */
+@media (max-width: 996px) {
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+
+  .heroContent {
+    gap: 2rem;
+  }
+
+  .sectionTitle {
+    font-size: 2rem;
+  }
+
+  .statNumber {
+    font-size: 2rem;
+  }
+}
+
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 2rem;
+  }
+
+  .heroSubtitle {
+    font-size: 1.25rem;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+
+  .buttonPrimary,
+  .buttonSecondary {
+    width: 100%;
+    text-align: center;
+  }
+}
+
+/* Performance Optimizations */
+.heroImage,
+.floatingImage,
+.rocketImage,
+.buttonPrimary,
+.buttonSecondary,
+.featureCard,
+.statCard,
+.techCard,
+.pathCard,
+.useCaseCard {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}

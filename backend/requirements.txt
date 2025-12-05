@@ -1,0 +1,24 @@
+# FastAPI and Server
+fastapi>=0.104.1
+uvicorn[standard]>=0.24.0
+python-multipart>=0.0.6
+
+# AI (Google Gemini - FREE!)
+google-generativeai>=0.3.2
+
+# OpenAI
+openai>=1.12.0
+
+# Vector Database
+qdrant-client>=1.8.0
+
+# Data Validation
+pydantic>=2.5.0
+pydantic-settings>=2.1.0
+
+# Environment Variables
+python-dotenv>=1.0.0
+
+# HTTP Client
+httpx>=0.25.2
+aiofiles>=23.2.1

@@ -1,0 +1,16 @@
+.progressBar {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 3px;
+  background: #0066FF;
+  z-index: 9999;
+  transition: width 0.15s ease-out;
+  box-shadow: 0 2px 4px rgba(0, 102, 255, 0.3);
+}
+
+@media print {
+  .progressBar {
+    display: none;
+  }
+}

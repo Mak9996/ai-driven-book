@@ -1,0 +1,936 @@
+/* ============================================
+   CLEAN WHITE MINIMALIST HOMEPAGE - REACT NATIVE STYLE
+   ============================================ */
+
+/* Hero Banner */
+.heroBanner {
+  padding: 6rem 2rem;
+  position: relative;
+  background: linear-gradient(135deg, #FFFFFF 0%, #F0F7FF 50%, #E6F2FF 100%);
+  color: var(--color-text-primary, #1F2937);
+  overflow: hidden;
+  min-height: 85vh;
+  display: flex;
+  align-items: center;
+}
+
+/* Subtle background accent */
+.heroBanner::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: radial-gradient(circle at 50% 50%, rgba(0, 102, 255, 0.03) 0%, transparent 60%);
+  pointer-events: none;
+}
+
+.heroContent {
+  position: relative;
+  z-index: 1;
+  max-width: 1400px;
+  margin: 0 auto;
+  display: flex;
+  align-items: center;
+  gap: 4rem;
+  flex-wrap: wrap;
+}
+
+.heroLeft {
+  flex: 1;
+  min-width: 320px;
+}
+
+.heroRight {
+  flex: 1;
+  min-width: 320px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.heroLabel {
+  display: inline-block;
+  background: rgba(0, 102, 255, 0.08);
+  color: #0066FF;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  font-size: 0.875rem;
+  font-weight: 600;
+  margin-bottom: 1rem;
+  border: 1px solid rgba(0, 102, 255, 0.2);
+}
+
+.heroTitle {
+  font-size: 3.5rem;
+  font-weight: 800;
+  margin: 1rem 0;
+  line-height: 1.2;
+  color: #1F2937;
+}
+
+.gradient {
+  background: linear-gradient(135deg, #0066FF 0%, #3B82F6 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.heroSubtitle {
+  font-size: 1.5rem;
+  color: #374151;
+  margin: 1rem 0;
+  font-weight: 500;
+}
+
+.heroDescription {
+  font-size: 1.125rem;
+  color: #6B7280;
+  margin: 1.5rem 0;
+  line-height: 1.7;
+}
+
+.buttons {
+  display: flex;
+  gap: 1rem;
+  margin: 2rem 0;
+  flex-wrap: wrap;
+}
+
+.buttonPrimary,
+.buttonSecondary {
+  padding: 1rem 2rem;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  font-size: 1rem;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-block;
+  will-change: transform;
+}
+
+.buttonPrimary {
+  background: #0066FF;
+  color: white;
+  box-shadow: 0 4px 14px 0 rgba(0, 102, 255, 0.25);
+}
+
+.buttonPrimary:hover {
+  background: #0052CC;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px 0 rgba(0, 102, 255, 0.35);
+  color: white;
+}
+
+.buttonSecondary {
+  background: white;
+  border: 2px solid #0066FF;
+  color: #0066FF;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.1);
+}
+
+.buttonSecondary:hover {
+  transform: translateY(-2px);
+  background: #F0F7FF;
+  box-shadow: 0 4px 12px 0 rgba(0, 102, 255, 0.15);
+  color: #0066FF;
+}
+
+.features {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+  flex-wrap: wrap;
+}
+
+.featureTag {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  background: #F7F8FA;
+  padding: 0.5rem 1rem;
+  border-radius: 2rem;
+  border: 1px solid #E8EAED;
+  font-size: 0.875rem;
+  color: #374151;
+}
+
+.featureIcon {
+  font-size: 1.25rem;
+  color: #0066FF;
+}
+
+.heroImage {
+  max-width: 600px;
+  width: 100%;
+  height: auto;
+  filter: drop-shadow(0 4px 12px rgba(0, 102, 255, 0.1));
+  will-change: transform;
+  animation: float 6s ease-in-out infinite;
+}
+
+@keyframes float {
+  0%, 100% { transform: translateY(0); }
+  50% { transform: translateY(-15px); }
+}
+
+/* Sections */
+.featuresSection,
+.statsSection,
+.techSection,
+.learningPath,
+.useCases,
+.faqSection,
+.ctaSection {
+  padding: 4rem 2rem;
+  position: relative;
+}
+
+/* Alternating Section Backgrounds */
+.featuresSection {
+  background: #FFFFFF;
+}
+
+.statsSection {
+  background: #F7F8FA;
+  border-top: 1px solid #E8EAED;
+  border-bottom: 1px solid #E8EAED;
+}
+
+.techSection {
+  background: #F7F8FA;
+  border-bottom: 1px solid #E8EAED;
+}
+
+.learningPath {
+  background: #F7F8FA;
+  border-bottom: 1px solid #E8EAED;
+}
+
+.useCases {
+  background: #FFFFFF;
+}
+
+.faqSection {
+  background: #FFFFFF;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+/* Section Headers */
+.sectionTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  text-align: center;
+  margin-bottom: 1rem;
+  color: #1F2937;
+}
+
+.sectionTitle .gradient {
+  background: linear-gradient(135deg, #0066FF 0%, #3B82F6 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.sectionSubtitle {
+  font-size: 1.25rem;
+  text-align: center;
+  color: #6B7280;
+  margin-bottom: 3rem;
+  line-height: 1.6;
+}
+
+.sectionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.sectionHeaderContent {
+  flex: 1;
+  min-width: 300px;
+}
+
+.sectionImage {
+  flex: 1;
+  min-width: 300px;
+  display: flex;
+  justify-content: center;
+}
+
+.floatingImage {
+  max-width: 400px;
+  width: 100%;
+  filter: drop-shadow(0 4px 12px rgba(0, 102, 255, 0.1));
+  animation: float 6s ease-in-out infinite;
+}
+
+/* Grids */
+.featuresGrid,
+.statsGrid,
+.techGrid,
+.pathGrid,
+.useCaseGrid,
+.faqGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 2rem;
+}
+
+/* Cards */
+.featureCard,
+.statCard,
+.techCard,
+.pathCard,
+.useCaseCard,
+.faqCard {
+  background: #FFFFFF;
+  border: 1px solid #E8EAED;
+  border-radius: 1rem;
+  padding: 2rem;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  will-change: transform;
+}
+
+.featureCard:hover,
+.statCard:hover,
+.techCard:hover,
+.pathCard:hover,
+.useCaseCard:hover {
+  transform: translateY(-6px);
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.1), 0 4px 8px rgba(0, 102, 255, 0.1);
+  border-color: #0066FF;
+}
+
+.featureCard h3,
+.useCaseCard h3,
+.faqQuestion {
+  color: #1F2937;
+  margin-bottom: 0.75rem;
+  font-size: 1.25rem;
+  font-weight: 600;
+}
+
+.featureCard p,
+.useCaseCard p,
+.faqAnswer {
+  color: #6B7280;
+  line-height: 1.6;
+}
+
+/* Stats Section */
+.statCard {
+  text-align: center;
+  background: #FFFFFF;
+}
+
+.statIcon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #0066FF;
+}
+
+.statNumber {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: #0066FF;
+  margin: 0.5rem 0;
+}
+
+.statLabel {
+  font-size: 1rem;
+  color: #6B7280;
+  font-weight: 500;
+}
+
+/* Tech Stack */
+.techCard {
+  text-align: center;
+  padding: 1.5rem;
+  background: #FFFFFF;
+}
+
+.techName {
+  font-weight: 600;
+  color: #1F2937;
+  margin-bottom: 0.5rem;
+  font-size: 1rem;
+}
+
+.techCategory {
+  font-size: 0.875rem;
+  color: #0066FF;
+  font-weight: 500;
+}
+
+/* Learning Path */
+.pathHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 3rem;
+  gap: 2rem;
+  flex-wrap: wrap;
+}
+
+.pathRocketImage {
+  max-width: 200px;
+}
+
+.rocketImage {
+  width: 100%;
+  filter: drop-shadow(0 4px 12px rgba(0, 102, 255, 0.1));
+  animation: float 6s ease-in-out infinite;
+}
+
+.pathCard {
+  background: #FFFFFF;
+}
+
+.pathStep {
+  width: 3rem;
+  height: 3rem;
+  border-radius: 50%;
+  background: #0066FF;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin-bottom: 1rem;
+  color: white;
+  box-shadow: 0 4px 12px rgba(0, 102, 255, 0.25);
+}
+
+.pathIcon {
+  font-size: 2rem;
+  margin: 1rem 0;
+  color: #0066FF;
+}
+
+.pathDuration {
+  margin-top: 1rem;
+  color: #9CA3AF;
+  font-size: 0.875rem;
+  font-weight: 500;
+}
+
+/* Use Cases */
+.tags {
+  display: flex;
+  gap: 0.5rem;
+  margin-top: 1rem;
+  flex-wrap: wrap;
+}
+
+.tag {
+  background: #F0F7FF;
+  color: #0066FF;
+  padding: 0.25rem 0.75rem;
+  border-radius: 1rem;
+  font-size: 0.75rem;
+  border: 1px solid rgba(0, 102, 255, 0.2);
+  font-weight: 600;
+}
+
+.useCaseIcon {
+  font-size: 2.5rem;
+  margin-bottom: 1rem;
+  color: #0066FF;
+}
+
+/* FAQ Section */
+.faqCard {
+  background: #F7F8FA;
+  border: 1px solid #E8EAED;
+}
+
+.faqCard:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.08);
+  border-color: #D1D5DB;
+}
+
+.faqQuestion {
+  color: #1F2937;
+  font-weight: 600;
+}
+
+.faqAnswer {
+  color: #6B7280;
+  margin-top: 0.5rem;
+}
+
+/* CTA Section */
+.ctaSection {
+  background: #0066FF;
+  text-align: center;
+  padding: 5rem 2rem;
+}
+
+.ctaTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  color: white;
+  margin-bottom: 1rem;
+}
+
+.ctaSubtitle {
+  font-size: 1.25rem;
+  color: rgba(255, 255, 255, 0.95);
+  margin-bottom: 2rem;
+  line-height: 1.6;
+}
+
+.ctaButtons {
+  display: flex;
+  gap: 1rem;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin: 2rem 0;
+}
+
+.buttonOutline {
+  background: transparent;
+  border: 2px solid white;
+  color: white;
+  padding: 1rem 2rem;
+  border-radius: 0.75rem;
+  font-weight: 600;
+  text-decoration: none;
+  transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+  display: inline-block;
+}
+
+.buttonOutline:hover {
+  background: white;
+  color: #0066FF;
+  transform: translateY(-2px);
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+.ctaNote {
+  margin-top: 2rem;
+  color: rgba(255, 255, 255, 0.9);
+  font-size: 0.875rem;
+}
+
+/* Responsive */
+@media (max-width: 996px) {
+  .heroTitle {
+    font-size: 2.5rem;
+  }
+
+  .heroContent {
+    gap: 2rem;
+  }
+
+  .sectionTitle {
+    font-size: 2rem;
+  }
+
+  .statNumber {
+    font-size: 2rem;
+  }
+
+  .featuresGrid,
+  .statsGrid,
+  .techGrid,
+  .pathGrid,
+  .useCaseGrid,
+  .faqGrid {
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+  }
+}
+
+@media (max-width: 768px) {
+  .heroTitle {
+    font-size: 2rem;
+  }
+
+  .heroSubtitle {
+    font-size: 1.25rem;
+  }
+
+  .heroDescription {
+    font-size: 1rem;
+  }
+
+  .buttons {
+    flex-direction: column;
+  }
+
+  .buttonPrimary,
+  .buttonSecondary {
+    width: 100%;
+    text-align: center;
+  }
+
+  .sectionTitle {
+    font-size: 1.75rem;
+  }
+
+  .sectionSubtitle {
+    font-size: 1rem;
+  }
+
+  .featuresGrid,
+  .statsGrid,
+  .techGrid,
+  .pathGrid,
+  .useCaseGrid,
+  .faqGrid {
+    grid-template-columns: 1fr;
+    gap: 1.5rem;
+  }
+
+  .heroImage,
+  .floatingImage {
+    max-width: 100%;
+  }
+}
+
+/* Performance Optimizations */
+.heroImage,
+.floatingImage,
+.rocketImage,
+.buttonPrimary,
+.buttonSecondary,
+.featureCard,
+.statCard,
+.techCard,
+.pathCard,
+.useCaseCard,
+.faqCard {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+/* Smooth Page Entry Animation */
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    transform: translateY(30px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.featuresSection,
+.statsSection,
+.techSection,
+.learningPath,
+.useCases,
+.faqSection {
+  animation: fadeInUp 0.6s ease-out;
+}
+
+/* Staggered Card Animations */
+.featureCard,
+.statCard,
+.techCard,
+.pathCard,
+.useCaseCard,
+.faqCard {
+  animation: fadeInUp 0.5s ease-out backwards;
+}
+
+.featureCard:nth-child(1),
+.statCard:nth-child(1),
+.techCard:nth-child(1),
+.pathCard:nth-child(1),
+.useCaseCard:nth-child(1),
+.faqCard:nth-child(1) {
+  animation-delay: 0.1s;
+}
+
+.featureCard:nth-child(2),
+.statCard:nth-child(2),
+.techCard:nth-child(2),
+.pathCard:nth-child(2),
+.useCaseCard:nth-child(2),
+.faqCard:nth-child(2) {
+  animation-delay: 0.2s;
+}
+
+.featureCard:nth-child(3),
+.statCard:nth-child(3),
+.techCard:nth-child(3),
+.pathCard:nth-child(3),
+.useCaseCard:nth-child(3),
+.faqCard:nth-child(3) {
+  animation-delay: 0.3s;
+}
+
+.featureCard:nth-child(4),
+.statCard:nth-child(4),
+.techCard:nth-child(4),
+.pathCard:nth-child(4),
+.useCaseCard:nth-child(4),
+.faqCard:nth-child(4) {
+  animation-delay: 0.4s;
+}
+
+/* Accessibility - Respect prefers-reduced-motion */
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+
+  .heroImage,
+  .floatingImage,
+  .rocketImage {
+    animation: none !important;
+  }
+}
+
+/* ============================================
+   DARK MODE - HOMEPAGE
+   ============================================ */
+
+/* Hero Section Dark Mode */
+[data-theme='dark'] .heroBanner {
+  background: linear-gradient(135deg, #0F172A 0%, #1E293B 50%, #334155 100%);
+  color: #F8FAFC;
+}
+
+[data-theme='dark'] .heroBanner::before {
+  background: radial-gradient(circle at 50% 50%, rgba(96, 165, 250, 0.08) 0%, transparent 60%);
+}
+
+[data-theme='dark'] .heroLabel {
+  background: rgba(96, 165, 250, 0.15);
+  color: #60A5FA;
+  border-color: rgba(96, 165, 250, 0.3);
+}
+
+[data-theme='dark'] .heroTitle {
+  color: #F8FAFC;
+}
+
+[data-theme='dark'] .gradient {
+  background: linear-gradient(135deg, #60A5FA 0%, #3B82F6 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+[data-theme='dark'] .heroSubtitle {
+  color: #CBD5E1;
+}
+
+[data-theme='dark'] .heroDescription {
+  color: #94A3B8;
+}
+
+/* Buttons Dark Mode */
+[data-theme='dark'] .buttonPrimary {
+  background: #60A5FA;
+  color: #0F172A;
+  box-shadow: 0 4px 14px 0 rgba(96, 165, 250, 0.3);
+}
+
+[data-theme='dark'] .buttonPrimary:hover {
+  background: #3B82F6;
+  box-shadow: 0 8px 20px 0 rgba(96, 165, 250, 0.4);
+  color: #0F172A;
+}
+
+[data-theme='dark'] .buttonSecondary {
+  background: transparent;
+  border-color: #60A5FA;
+  color: #60A5FA;
+  box-shadow: 0 1px 3px 0 rgba(0, 0, 0, 0.3);
+}
+
+[data-theme='dark'] .buttonSecondary:hover {
+  background: rgba(96, 165, 250, 0.1);
+  box-shadow: 0 4px 12px 0 rgba(96, 165, 250, 0.2);
+  color: #60A5FA;
+}
+
+[data-theme='dark'] .featureTag {
+  background: #1E293B;
+  border-color: #475569;
+  color: #CBD5E1;
+}
+
+[data-theme='dark'] .featureIcon {
+  color: #60A5FA;
+}
+
+/* Section Backgrounds Dark Mode */
+[data-theme='dark'] .featuresSection {
+  background: #0F172A;
+}
+
+[data-theme='dark'] .statsSection {
+  background: #1E293B;
+  border-color: #334155;
+}
+
+[data-theme='dark'] .techSection {
+  background: #1E293B;
+  border-color: #334155;
+}
+
+[data-theme='dark'] .learningPath {
+  background: #1E293B;
+  border-color: #334155;
+}
+
+[data-theme='dark'] .useCases {
+  background: #0F172A;
+}
+
+[data-theme='dark'] .faqSection {
+  background: #0F172A;
+}
+
+/* Section Headers Dark Mode */
+[data-theme='dark'] .sectionTitle {
+  color: #F8FAFC;
+}
+
+[data-theme='dark'] .sectionTitle .gradient {
+  background: linear-gradient(135deg, #60A5FA 0%, #3B82F6 100%);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+[data-theme='dark'] .sectionSubtitle {
+  color: #94A3B8;
+}
+
+/* Cards Dark Mode */
+[data-theme='dark'] .featureCard,
+[data-theme='dark'] .statCard,
+[data-theme='dark'] .techCard,
+[data-theme='dark'] .pathCard,
+[data-theme='dark'] .useCaseCard {
+  background: #1E293B;
+  border-color: #475569;
+}
+
+[data-theme='dark'] .featureCard:hover,
+[data-theme='dark'] .statCard:hover,
+[data-theme='dark'] .techCard:hover,
+[data-theme='dark'] .pathCard:hover,
+[data-theme='dark'] .useCaseCard:hover {
+  border-color: #60A5FA;
+  box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3), 0 4px 8px rgba(96, 165, 250, 0.2);
+}
+
+[data-theme='dark'] .featureCard h3,
+[data-theme='dark'] .useCaseCard h3,
+[data-theme='dark'] .faqQuestion {
+  color: #F8FAFC;
+}
+
+[data-theme='dark'] .featureCard p,
+[data-theme='dark'] .useCaseCard p,
+[data-theme='dark'] .faqAnswer {
+  color: #94A3B8;
+}
+
+/* Stats Section Dark Mode */
+[data-theme='dark'] .statIcon {
+  color: #60A5FA;
+}
+
+[data-theme='dark'] .statNumber {
+  color: #60A5FA;
+}
+
+[data-theme='dark'] .statLabel {
+  color: #94A3B8;
+}
+
+/* Tech Stack Dark Mode */
+[data-theme='dark'] .techName {
+  color: #F8FAFC;
+}
+
+[data-theme='dark'] .techCategory {
+  color: #60A5FA;
+}
+
+/* Learning Path Dark Mode */
+[data-theme='dark'] .pathStep {
+  background: #60A5FA;
+  color: #0F172A;
+  box-shadow: 0 4px 12px rgba(96, 165, 250, 0.3);
+}
+
+[data-theme='dark'] .pathIcon {
+  color: #60A5FA;
+}
+
+[data-theme='dark'] .pathDuration {
+  color: #64748B;
+}
+
+/* Use Cases Dark Mode */
+[data-theme='dark'] .tag {
+  background: rgba(96, 165, 250, 0.15);
+  color: #60A5FA;
+  border-color: rgba(96, 165, 250, 0.3);
+}
+
+[data-theme='dark'] .useCaseIcon {
+  color: #60A5FA;
+}
+
+/* FAQ Section Dark Mode */
+[data-theme='dark'] .faqCard {
+  background: #1E293B;
+  border-color: #475569;
+}
+
+[data-theme='dark'] .faqCard:hover {
+  border-color: #60A5FA;
+  box-shadow: 0 8px 16px rgba(0, 0, 0, 0.3);
+}
+
+/* CTA Section Dark Mode */
+[data-theme='dark'] .ctaSection {
+  background: linear-gradient(135deg, #1E40AF 0%, #1E3A8A 100%);
+}
+
+[data-theme='dark'] .ctaTitle {
+  color: #F8FAFC;
+}
+
+[data-theme='dark'] .ctaSubtitle {
+  color: rgba(248, 250, 252, 0.9);
+}
+
+[data-theme='dark'] .buttonOutline {
+  border-color: #F8FAFC;
+  color: #F8FAFC;
+}
+
+[data-theme='dark'] .buttonOutline:hover {
+  background: #F8FAFC;
+  color: #1E40AF;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.4);
+}
+
+[data-theme='dark'] .ctaNote {
+  color: rgba(248, 250, 252, 0.8);
+}

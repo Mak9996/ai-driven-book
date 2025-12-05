@@ -1,0 +1,332 @@
+/**
+ * OPTIMIZED Black & Blue Theme - GPU Accelerated
+ * Performance-focused with hardware acceleration
+ */
+
+/* ============================================
+   COLOR PALETTE
+   ============================================ */
+:root {
+  /* Black Theme */
+  --color-black: #000000;
+  --color-black-soft: #0A0A0F;
+  --color-black-lighter: #1A1A2E;
+  --color-gray-dark: #16213E;
+
+  /* Electric Blue */
+  --color-blue-neon: #00D4FF;
+  --color-blue-bright: #0099FF;
+  --color-blue-electric: #0066FF;
+
+  /* Shadows - Simplified */
+  --shadow-sm: 0 4px 8px rgba(0, 0, 0, 0.5);
+  --shadow-md: 0 8px 16px rgba(0, 0, 0, 0.6);
+  --shadow-lg: 0 12px 24px rgba(0, 0, 0, 0.7);
+  --shadow-glow: 0 0 20px rgba(0, 212, 255, 0.4);
+
+  /* Gradients */
+  --gradient-blue: linear-gradient(135deg, #0066FF 0%, #00D4FF 100%);
+  --gradient-bg: linear-gradient(135deg, #000000 0%, #16213E 100%);
+
+  /* Docusaurus Variables */
+  --ifm-color-primary: #00D4FF;
+  --ifm-color-primary-dark: #0099FF;
+  --ifm-color-primary-darker: #0066FF;
+  --ifm-background-color: #0A0A0F;
+  --ifm-background-surface-color: #16213E;
+  --ifm-font-color-base: #FFFFFF;
+  --ifm-heading-color: #00D4FF;
+  --docusaurus-highlighted-code-line-bg: rgba(0, 153, 255, 0.2);
+}
+
+/* ============================================
+   GLOBAL STYLES - GPU OPTIMIZED
+   ============================================ */
+html {
+  scroll-behavior: smooth;
+  background: var(--color-black);
+}
+
+body {
+  background: var(--gradient-bg);
+  background-attachment: fixed;
+  color: #FFFFFF;
+  position: relative;
+  overflow-x: hidden;
+}
+
+/* GPU-accelerated elements */
+* {
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+/* Simple background effect - minimal CPU usage */
+body::before {
+  content: '';
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: radial-gradient(circle at 50% 50%, rgba(0, 212, 255, 0.05) 0%, transparent 50%);
+  pointer-events: none;
+  z-index: 0;
+}
+
+/* ============================================
+   HEADERS & NAVIGATION
+   ============================================ */
+.navbar {
+  background: rgba(10, 10, 15, 0.95);
+  backdrop-filter: blur(8px);
+  border-bottom: 1px solid rgba(0, 153, 255, 0.2);
+  box-shadow: var(--shadow-md);
+}
+
+.navbar__link {
+  color: #FFFFFF;
+  transition: color 0.2s ease;
+}
+
+.navbar__link:hover {
+  color: var(--color-blue-neon);
+}
+
+/* ============================================
+   CARDS - GPU ACCELERATED
+   ============================================ */
+.card {
+  background: rgba(26, 26, 46, 0.8);
+  border: 1px solid rgba(0, 153, 255, 0.2);
+  border-radius: 12px;
+  padding: 1.5rem;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: var(--shadow-md);
+  position: relative;
+  will-change: transform;
+}
+
+.card:hover {
+  transform: translateY(-4px);
+  box-shadow: var(--shadow-lg), var(--shadow-glow);
+  border-color: var(--color-blue-neon);
+}
+
+/* ============================================
+   BUTTONS - OPTIMIZED
+   ============================================ */
+.button,
+.button--primary {
+  background: var(--gradient-blue);
+  color: white;
+  border: none;
+  padding: 0.75rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+  box-shadow: var(--shadow-sm);
+  will-change: transform;
+}
+
+.button:hover,
+.button--primary:hover {
+  transform: translateY(-2px);
+  box-shadow: var(--shadow-md), var(--shadow-glow);
+  color: white;
+}
+
+.button--secondary {
+  background: transparent;
+  border: 2px solid var(--color-blue-neon);
+  color: var(--color-blue-neon);
+}
+
+.button--secondary:hover {
+  background: rgba(0, 212, 255, 0.1);
+  color: var(--color-blue-neon);
+}
+
+/* ============================================
+   GRADIENT TEXT
+   ============================================ */
+.gradient-text {
+  background: var(--gradient-blue);
+  -webkit-background-clip: text;
+  background-clip: text;
+  -webkit-text-fill-color: transparent;
+  font-weight: 700;
+}
+
+/* ============================================
+   SIDEBAR
+   ============================================ */
+.menu {
+  background: rgba(10, 10, 15, 0.95);
+  padding: 1rem;
+}
+
+.menu__link {
+  color: rgba(255, 255, 255, 0.8);
+  border-radius: 6px;
+  transition: all 0.2s ease;
+}
+
+.menu__link:hover,
+.menu__link--active {
+  background: rgba(0, 153, 255, 0.15);
+  color: var(--color-blue-neon);
+}
+
+/* ============================================
+   CODE BLOCKS
+   ============================================ */
+pre {
+  background: rgba(10, 10, 15, 0.95);
+  border: 1px solid rgba(0, 153, 255, 0.2);
+  border-radius: 8px;
+  box-shadow: var(--shadow-md);
+}
+
+code {
+  background: rgba(0, 153, 255, 0.1);
+  border-radius: 4px;
+  padding: 0.2rem 0.4rem;
+  color: var(--color-blue-neon);
+}
+
+/* ============================================
+   LINKS
+   ============================================ */
+a {
+  color: var(--color-blue-neon);
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+a:hover {
+  color: var(--color-blue-bright);
+}
+
+/* ============================================
+   MARKDOWN CONTENT
+   ============================================ */
+.markdown h1, .markdown h2, .markdown h3 {
+  color: var(--color-blue-neon);
+  border-bottom: 2px solid rgba(0, 153, 255, 0.2);
+  padding-bottom: 0.5rem;
+}
+
+.markdown {
+  color: rgba(255, 255, 255, 0.9);
+}
+
+/* ============================================
+   TABLES
+   ============================================ */
+table {
+  border: 1px solid rgba(0, 153, 255, 0.2);
+  background: rgba(26, 26, 46, 0.5);
+}
+
+th {
+  background: rgba(0, 102, 255, 0.2);
+  color: var(--color-blue-neon);
+  border-bottom: 2px solid var(--color-blue-neon);
+}
+
+td {
+  border: 1px solid rgba(0, 153, 255, 0.1);
+}
+
+/* ============================================
+   FOOTER
+   ============================================ */
+.footer {
+  background: rgba(10, 10, 15, 0.95);
+  border-top: 1px solid rgba(0, 153, 255, 0.2);
+  color: rgba(255, 255, 255, 0.8);
+}
+
+/* ============================================
+   PAGINATION
+   ============================================ */
+.pagination-nav__link {
+  border: 1px solid rgba(0, 153, 255, 0.2);
+  background: rgba(26, 26, 46, 0.5);
+  border-radius: 8px;
+  transition: all 0.2s ease;
+}
+
+.pagination-nav__link:hover {
+  border-color: var(--color-blue-neon);
+  background: rgba(0, 153, 255, 0.1);
+  box-shadow: var(--shadow-glow);
+}
+
+/* ============================================
+   ANIMATIONS - MINIMAL & GPU ACCELERATED
+   ============================================ */
+@keyframes fadeIn {
+  from { opacity: 0; transform: translateY(10px); }
+  to { opacity: 1; transform: translateY(0); }
+}
+
+/* ============================================
+   RESPONSIVE
+   ============================================ */
+@media (max-width: 996px) {
+  .navbar {
+    background: rgba(10, 10, 15, 0.98);
+  }
+}
+
+/* ============================================
+   ACCESSIBILITY
+   ============================================ */
+:focus-visible {
+  outline: 2px solid var(--color-blue-neon);
+  outline-offset: 2px;
+}
+
+/* ============================================
+   SCROLLBAR
+   ============================================ */
+::-webkit-scrollbar {
+  width: 12px;
+  height: 12px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--color-black-soft);
+}
+
+::-webkit-scrollbar-thumb {
+  background: rgba(0, 153, 255, 0.4);
+  border-radius: 6px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: rgba(0, 153, 255, 0.6);
+}
+
+/* ============================================
+   PERFORMANCE OPTIMIZATIONS
+   ============================================ */
+.card,
+.button,
+img,
+.navbar {
+  transform: translateZ(0);
+  backface-visibility: hidden;
+}
+
+/* Reduce motion for users who prefer it */
+@media (prefers-reduced-motion: reduce) {
+  * {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+  }
+}

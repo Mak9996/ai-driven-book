@@ -1,0 +1,414 @@
+.mcqContainer {
+  background: white;
+  border: 2px solid #E5E7EB;
+  border-radius: 12px;
+  padding: 24px;
+  margin: 32px 0;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.header {
+  margin-bottom: 24px;
+  text-align: center;
+}
+
+.header h3 {
+  margin: 0 0 8px 0;
+  font-size: 24px;
+  font-weight: 700;
+  color: #1F2937;
+}
+
+.subtitle {
+  margin: 0 0 16px 0;
+  font-size: 14px;
+  color: #6B7280;
+}
+
+.scoreCard {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  border-radius: 12px;
+  padding: 24px;
+  color: white;
+  margin-top: 16px;
+  text-align: center;
+}
+
+.scoreBig {
+  font-size: 48px;
+  font-weight: 800;
+  margin-bottom: 8px;
+}
+
+.scorePercentage {
+  font-size: 24px;
+  font-weight: 600;
+  opacity: 0.9;
+}
+
+.scoreLabel {
+  margin-top: 12px;
+  font-size: 18px;
+  font-weight: 600;
+}
+
+.questionsList {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.questionCard {
+  border: 2px solid #E5E7EB;
+  border-radius: 12px;
+  padding: 20px;
+  background: #F9FAFB;
+}
+
+.questionHeader {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 12px;
+}
+
+.questionNumber {
+  background: #0066FF;
+  color: white;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.correctBadge {
+  background: #10B981;
+  color: white;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.incorrectBadge {
+  background: #EF4444;
+  color: white;
+  padding: 6px 16px;
+  border-radius: 20px;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.questionText {
+  font-size: 18px;
+  font-weight: 600;
+  color: #1F2937;
+  margin-bottom: 16px;
+  line-height: 1.6;
+}
+
+.optionsList {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.option {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  padding: 14px 16px;
+  background: white;
+  border: 2px solid #E5E7EB;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s ease;
+  font-size: 15px;
+  text-align: left;
+}
+
+.option:hover:not(:disabled) {
+  border-color: #0066FF;
+  background: #F0F7FF;
+}
+
+.option:disabled {
+  cursor: default;
+}
+
+.option.selected {
+  border-color: #0066FF;
+  background: #F0F7FF;
+}
+
+.option.correct {
+  border-color: #10B981;
+  background: #D1FAE5;
+}
+
+.option.incorrect {
+  border-color: #EF4444;
+  background: #FEE2E2;
+}
+
+.option.showCorrect {
+  border-color: #10B981;
+  background: #D1FAE5;
+}
+
+.optionLetter {
+  flex-shrink: 0;
+  width: 32px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #E5E7EB;
+  color: #1F2937;
+  border-radius: 50%;
+  font-weight: 700;
+  font-size: 14px;
+}
+
+.option.selected .optionLetter {
+  background: #0066FF;
+  color: white;
+}
+
+.option.correct .optionLetter,
+.option.showCorrect .optionLetter {
+  background: #10B981;
+  color: white;
+}
+
+.option.incorrect .optionLetter {
+  background: #EF4444;
+  color: white;
+}
+
+.optionText {
+  flex: 1;
+  color: #374151;
+  line-height: 1.5;
+}
+
+.correctIcon {
+  flex-shrink: 0;
+  width: 24px;
+  height: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #10B981;
+  color: white;
+  border-radius: 50%;
+  font-size: 14px;
+  font-weight: 700;
+}
+
+.explanation {
+  margin-top: 16px;
+  padding: 16px;
+  background: #FFF7ED;
+  border-left: 4px solid #F59E0B;
+  border-radius: 6px;
+}
+
+.explanationLabel {
+  font-size: 14px;
+  font-weight: 700;
+  color: #D97706;
+  margin-bottom: 8px;
+}
+
+.explanationText {
+  font-size: 14px;
+  line-height: 1.7;
+  color: #78350F;
+}
+
+.submitButton {
+  width: 100%;
+  padding: 12px 24px;
+  background: #0066FF;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.submitButton:hover {
+  background: #0052CC;
+}
+
+.actions {
+  margin-top: 24px;
+  display: flex;
+  gap: 12px;
+  justify-content: center;
+}
+
+.submitAllButton {
+  padding: 14px 32px;
+  background: #10B981;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.submitAllButton:hover:not(:disabled) {
+  background: #059669;
+}
+
+.submitAllButton:disabled {
+  background: #9CA3AF;
+  cursor: not-allowed;
+}
+
+.retryButton {
+  padding: 14px 32px;
+  background: #6366F1;
+  color: white;
+  border: none;
+  border-radius: 8px;
+  font-size: 16px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: background 0.2s ease;
+}
+
+.retryButton:hover {
+  background: #4F46E5;
+}
+
+/* Dark mode support */
+[data-theme='dark'] .mcqContainer {
+  background: #1F2937;
+  border-color: #374151;
+}
+
+[data-theme='dark'] .header h3 {
+  color: #F9FAFB;
+}
+
+[data-theme='dark'] .subtitle {
+  color: #9CA3AF;
+}
+
+[data-theme='dark'] .questionCard {
+  background: #111827;
+  border-color: #374151;
+}
+
+[data-theme='dark'] .questionText {
+  color: #F9FAFB;
+}
+
+[data-theme='dark'] .option {
+  background: #1F2937;
+  border-color: #374151;
+}
+
+[data-theme='dark'] .option:hover:not(:disabled) {
+  background: #1E3A8A;
+  border-color: #3B82F6;
+}
+
+[data-theme='dark'] .option.selected {
+  background: #1E3A8A;
+  border-color: #3B82F6;
+}
+
+[data-theme='dark'] .option.correct {
+  background: #064E3B;
+  border-color: #10B981;
+}
+
+[data-theme='dark'] .option.incorrect {
+  background: #7F1D1D;
+  border-color: #EF4444;
+}
+
+[data-theme='dark'] .option.showCorrect {
+  background: #064E3B;
+  border-color: #10B981;
+}
+
+[data-theme='dark'] .optionLetter {
+  background: #374151;
+  color: #F9FAFB;
+}
+
+[data-theme='dark'] .optionText {
+  color: #D1D5DB;
+}
+
+[data-theme='dark'] .explanation {
+  background: #1F2937;
+  border-color: #F59E0B;
+}
+
+[data-theme='dark'] .explanationText {
+  color: #D1D5DB;
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .mcqContainer {
+    padding: 16px;
+    margin: 24px 0;
+  }
+
+  .header h3 {
+    font-size: 20px;
+  }
+
+  .scoreCard {
+    padding: 16px;
+  }
+
+  .scoreBig {
+    font-size: 36px;
+  }
+
+  .scorePercentage {
+    font-size: 20px;
+  }
+
+  .scoreLabel {
+    font-size: 16px;
+  }
+
+  .questionCard {
+    padding: 16px;
+  }
+
+  .questionText {
+    font-size: 16px;
+  }
+
+  .option {
+    padding: 12px;
+  }
+
+  .optionText {
+    font-size: 14px;
+  }
+
+  .actions {
+    flex-direction: column;
+  }
+
+  .submitAllButton,
+  .retryButton {
+    width: 100%;
+  }
+}

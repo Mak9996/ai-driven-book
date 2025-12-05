@@ -1,0 +1,252 @@
+.developerFooter {
+  background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+  padding: 60px 20px 40px;
+  color: white;
+  margin-top: 80px;
+}
+
+.container {
+  max-width: 1200px;
+  margin: 0 auto;
+}
+
+.content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+}
+
+.developerInfo {
+  display: flex;
+  align-items: center;
+  gap: 40px;
+  max-width: 800px;
+}
+
+.imageWrapper {
+  flex-shrink: 0;
+}
+
+.developerImage {
+  width: 150px;
+  height: 150px;
+  border-radius: 50%;
+  border: 5px solid rgba(255, 255, 255, 0.3);
+  box-shadow: 0 8px 32px rgba(0, 0, 0, 0.3);
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.developerImage:hover {
+  transform: scale(1.05);
+}
+
+.details {
+  flex: 1;
+  text-align: left;
+}
+
+.title {
+  font-size: 14px;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+  margin: 0 0 8px 0;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.name {
+  font-size: 36px;
+  font-weight: 800;
+  margin: 0 0 8px 0;
+  color: white;
+}
+
+.role {
+  font-size: 18px;
+  font-weight: 600;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0 0 20px 0;
+}
+
+.achievements {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 12px;
+  margin-bottom: 20px;
+}
+
+.achievement {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  background: rgba(255, 255, 255, 0.15);
+  padding: 6px 14px;
+  border-radius: 20px;
+  backdrop-filter: blur(10px);
+  border: 1px solid rgba(255, 255, 255, 0.2);
+  transition: all 0.3s ease;
+}
+
+.achievement:hover {
+  background: rgba(255, 255, 255, 0.25);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+}
+
+.achievementIcon {
+  font-size: 18px;
+}
+
+.achievementTitle {
+  font-size: 13px;
+  font-weight: 600;
+  color: white;
+}
+
+.description {
+  font-size: 15px;
+  line-height: 1.6;
+  color: rgba(255, 255, 255, 0.85);
+  margin: 0 0 20px 0;
+}
+
+.technologies {
+  margin-top: 20px;
+}
+
+.techLabel {
+  font-size: 14px;
+  font-weight: 700;
+  color: rgba(255, 255, 255, 0.9);
+  margin: 0 0 12px 0;
+  text-transform: uppercase;
+  letter-spacing: 1px;
+}
+
+.techTags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+}
+
+.techTag {
+  display: inline-block;
+  padding: 6px 12px;
+  background: rgba(255, 255, 255, 0.2);
+  color: white;
+  font-size: 12px;
+  font-weight: 600;
+  border-radius: 6px;
+  border: 1px solid rgba(255, 255, 255, 0.3);
+  backdrop-filter: blur(5px);
+  transition: all 0.2s ease;
+}
+
+.techTag:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.05);
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.15);
+}
+
+.divider {
+  width: 100%;
+  max-width: 600px;
+  height: 2px;
+  background: linear-gradient(90deg,
+    transparent 0%,
+    rgba(255, 255, 255, 0.3) 50%,
+    transparent 100%
+  );
+}
+
+.copyright {
+  text-align: center;
+}
+
+.copyright p {
+  margin: 0 0 8px 0;
+  font-size: 14px;
+  color: rgba(255, 255, 255, 0.8);
+}
+
+.subtext {
+  font-size: 12px;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+/* Dark mode adjustments */
+[data-theme='dark'] .developerFooter {
+  background: linear-gradient(135deg, #4a5568 0%, #2d3748 100%);
+}
+
+/* Mobile responsive */
+@media (max-width: 768px) {
+  .developerFooter {
+    padding: 40px 20px 30px;
+    margin-top: 60px;
+  }
+
+  .developerInfo {
+    flex-direction: column;
+    text-align: center;
+    gap: 24px;
+  }
+
+  .details {
+    text-align: center;
+  }
+
+  .developerImage {
+    width: 120px;
+    height: 120px;
+  }
+
+  .name {
+    font-size: 28px;
+  }
+
+  .role {
+    font-size: 16px;
+  }
+
+  .achievements {
+    justify-content: center;
+  }
+
+  .achievement {
+    font-size: 11px;
+    padding: 5px 10px;
+  }
+
+  .achievementIcon {
+    font-size: 16px;
+  }
+
+  .achievementTitle {
+    font-size: 11px;
+  }
+
+  .description {
+    font-size: 14px;
+  }
+
+  .technologies {
+    margin-top: 16px;
+  }
+
+  .techLabel {
+    font-size: 13px;
+  }
+
+  .techTags {
+    justify-content: center;
+    gap: 6px;
+  }
+
+  .techTag {
+    font-size: 11px;
+    padding: 5px 10px;
+  }
+}

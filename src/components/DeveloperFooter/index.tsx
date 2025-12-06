@@ -10,6 +10,8 @@ export default function DeveloperFooter() {
 
   const achievements = [
     { icon: '🏆', title: 'HBL P@SHA Winner' },
+    { icon: '🥇', title: 'Eastern Michigan University - 1st Prize' },
+    { icon: '🎖️', title: 'NED University - D2D Program' },
     { icon: '👨‍🏫', title: 'Sr. Instructor' },
     { icon: '🎓', title: 'UTech Ambassador' },
     { icon: '🚀', title: 'NASA Ambassador' }

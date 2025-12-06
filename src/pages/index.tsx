@@ -14,8 +14,11 @@ function HomepageHeader() {
         <div className={styles.heroLeft}>
           <div className={styles.heroLabel}>✨ The Complete Guide</div>
           <h1 className={styles.heroTitle}>
-            Build the Future with <span className={styles.pakistanText}>AI-Driven Development</span>
+            Build the Future with AI-Driven Development
           </h1>
+          <h2 className={styles.panaversityTitle}>
+            Powered by <span className={styles.pakistanText}>Panaversity</span>
+          </h2>
           <p className={styles.heroSubtitle}>
             Transform from traditional coding to AI-native development. Build enterprise apps 10x faster with specification-driven methodologies.
           </p>

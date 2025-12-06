@@ -70,6 +70,14 @@
   color: #FFFFFF;
 }
 
+.panaversityTitle {
+  font-size: 2.5rem;
+  font-weight: 700;
+  margin: 1rem 0;
+  line-height: 1.3;
+  color: rgba(255, 255, 255, 0.9);
+}
+
 .gradient {
   background: linear-gradient(135deg, #0066FF 0%, #3B82F6 100%);
   -webkit-background-clip: text;

